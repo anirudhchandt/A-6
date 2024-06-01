@@ -50,6 +50,9 @@ public class Homepage {
 	
 	@FindBy(partialLinkText = "Gift Cards")
 	private WebElement giftCardLink;
+	
+	@FindBy(linkText = "Log out")
+	private WebElement logoutButton;
 
 	public WebElement getRegisterLink() {
 		return registerLink;
@@ -102,6 +105,11 @@ public class Homepage {
 	public WebElement getGiftCardLink() {
 		return giftCardLink;
 	}
+
+	public WebElement getLogoutButton() {
+		return logoutButton;
+	}
+	
 	
 	
 	
